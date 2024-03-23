@@ -17,8 +17,9 @@
 192.187.56.9
 192.187.56.10
 
-[roboshop children]
+[roboshop:children]
 web
 catalogue
 cart
+user
 
