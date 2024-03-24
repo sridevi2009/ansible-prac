@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: install tools
-    ansible.builtin.debug:
+    ansible.builtin.package:
       name: "{{item}}" # item is the default keyword in loop
       state: present
     loop:
