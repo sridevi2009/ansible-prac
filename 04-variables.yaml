@@ -1,3 +1,4 @@
+# play level variables
 - name: variables from playbook
   hosts: localhost
   vars:
