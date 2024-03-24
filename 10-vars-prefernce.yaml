@@ -1,4 +1,4 @@
-- name: variables from args level plsybook
+- name: variables from prefernce level plsybook
   hosts: localhost
   vars_files:
   - variables-files.yaml
@@ -13,7 +13,7 @@
     Person: "sridevi from play"
     Wishes: "good from play"
   tasks:
-  - name: vars from directly applying from command
+  - name: vars from directly applying from prefernce level variable
     vars:
       Person: "sridevi from tasks"
       Wishes: "good from tasks"
