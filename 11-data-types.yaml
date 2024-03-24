@@ -19,7 +19,7 @@
 
   - name: print list value 
     ansible.builtin.debug:
-    msg: "skills is: {{SKILLS}}"
+      msg: "skills is: {{SKILLS}}"
 
   - name: print map value
     ansible.builtin.debug:
