@@ -1,8 +1,8 @@
-- name: loops
+- name: loops to install tools
   hosts: localhost
   become: yes
   tasks:
-  - name: print persons
+  - name: install tools
     ansible.builtin.debug:
       name: "{{item}}" # item is the default keyword in loop
       state: present
