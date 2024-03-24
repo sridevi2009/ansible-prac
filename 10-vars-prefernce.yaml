@@ -9,9 +9,9 @@
   # - name: Wishes
   #   prompt: please enter your wishes
   #   private: false  #user cant see what they are entering
-  vars:
-    Person: "sridevi from play"
-    Wishes: "good from play"
+  # vars:
+  #   Person: "sridevi from play"
+  #   Wishes: "good from play"
   tasks:
   - name: vars from directly applying from prefernce level variable
     # vars:
@@ -21,7 +21,8 @@
       msg: "Hi, Im learning {{Person}}, learner is {{Wishes}}"
 
 
-# first prefernce from command {CMD} 
-# second prefernce tasks level  
-# third prefernce from file level vars
-# fourth prefernce from prompt
+# first prefernce from command {CMD} ---CMD
+# second prefernce tasks level  --- TASK LEVEL
+# third prefernce from file level vars--FILE LEVEL
+# fourth prefernce from prompt---- PROMPT LEVEL
+# fifth prefernce form play level ---PLAY LEVEL
