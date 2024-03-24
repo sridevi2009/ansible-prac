@@ -10,4 +10,4 @@
     vars: # task level
       Course: "Devops with aws"
     ansible.builtin.debug:
-      msg: "hi, im learning {{Course}}, learner is {{learner}}, and duration is {{Duration}}"    
+      msg: "hi, im learning {{Course}}, learner is {{Learner}}, and duration is {{Duration}}"    
