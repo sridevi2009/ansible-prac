@@ -1,0 +1,8 @@
+- name: variable file level playbooks
+  hosts: localhost
+  vars_file:
+  - variables-files.yaml
+  tasks:
+  - name: file level tasks
+    ansible.builtin.debug:
+      msg: "Hi, Im learning {{Course}},learner is {{Learner}}, duration is {{Duration}}"
