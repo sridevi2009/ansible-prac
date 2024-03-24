@@ -2,13 +2,13 @@
   hosts: localhost
   vars_files:
   - variables-files.yaml 
-  vars_prompt:
-  - name: Person
-    prompt: Please enter your name
-    private: false #user can see what they are entering
-  - name: Wishes
-    prompt: please enter your wishes
-    private: false  #user cant see what they are entering
+  # vars_prompt:
+  # - name: Person
+  #   prompt: Please enter your name
+  #   private: false #user can see what they are entering
+  # - name: Wishes
+  #   prompt: please enter your wishes
+  #   private: false  #user cant see what they are entering
   vars:
     Person: "sridevi from play"
     Wishes: "good from play"
@@ -24,3 +24,4 @@
 # first prefernce from command {CMD} 
 # second prefernce tasks level  
 # third prefernce from file level vars
+# fourth prefernce from prompt
