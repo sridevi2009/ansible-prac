@@ -11,5 +11,5 @@
       msg: "user output is: {{user}}"
 
   - name: print exist status of return code
-    ainsible.builtin.debug:
+    ansible.builtin.debug:
       msg: "status is: {{user.rc}}"      
