@@ -1,0 +1,21 @@
+- name: variables from args level plsybook
+  hosts: localhost
+  vars_files:
+  - variables-files.yaml
+  vars_prompt:
+  - name: Person
+    prompt: Please enter your name
+    private: false #user can see what they are entering
+  - name: Wishes
+    prompt: please enter your wishes
+    private: false #user cant see what they are entering
+  vars:
+    Person: "sridevi from play"
+    Wishes: "good from play"
+  tasks:
+  - name: vars from directly applying from command
+    vars:
+      Person: "sridevi from tasks"
+      Wishes: "good from tasks"
+    ansible.builtin.debug:
+      msg: "Hi, Im learning {{Person}}, learner is {{Wishes}}"
