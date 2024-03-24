@@ -1,6 +1,6 @@
 - name: variable file level playbooks
   hosts: localhost
-  vars_file:
+  vars_files:
   - variables-files.yaml
   tasks:
   - name: file level tasks
