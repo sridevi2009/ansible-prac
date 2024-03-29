@@ -1,0 +1,14 @@
+- name: ping palybook
+  hosts: localhost
+  tasks: 
+  - name: ping the server
+    ansible.builtin.debug:
+      msg: "HELLO DEVOPS"
+    tags:
+    - devops   
+  - name: ping the server
+    ansible.builtin.debug:
+      msg: "HELLO AWS"
+    tags:
+    - aws  
+
